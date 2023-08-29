@@ -2,8 +2,8 @@
 
 const colors = ["blue", "yellow", "red", "white"];
 const background = document.getElementById("background");
-const pauseButton = document.getElementById("pauseButton");
-const resetButton = document.getElementById("resetButton");
+/*const pauseButton = document.getElementById("pauseButton");
+const resetButton = document.getElementById("resetButton");*/
 const timer = document.getElementById("timer");
 
 let currentIndex = 0;
@@ -45,10 +45,10 @@ function togglePause() {
   if (timerInterval) {
     clearInterval(timerInterval);
     timerInterval = null;
-    pauseButton.textContent = "Play";
+   /*pauseButton.textContent = "Play";*/
   } else {
     timerInterval = setInterval(updateTimer, 10);
-    pauseButton.textContent = "Pause";
+    /*pauseButton.textContent = "Pause";*/
   }
 }
 
@@ -60,14 +60,14 @@ function resetTimer() {
   timerValue = 5.0;
   timer.textContent = timerValue.toFixed(2) + "s";
   changeBackgroundColor();
-  pauseButton.textContent = "Play";
+/*  pauseButton.textContent = "Play";*/
 }
 
 // ****************************************************************************************** EVENT LISTENER
 
 background.addEventListener("click", changeBackgroundColor);
-pauseButton.addEventListener("click", togglePause);
-resetButton.addEventListener("click", resetTimer);
+/*pauseButton.addEventListener("click", togglePause);*/
+/*resetButton.addEventListener("click", resetTimer);*/
 
 changeBackgroundColor();
 togglePause();
