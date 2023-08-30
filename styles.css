@@ -17,6 +17,10 @@ body {
     z-index: -1;
 }
 
+.black {
+    background-color: black;
+}
+
 .blue {
     background-color: blue;
 }
