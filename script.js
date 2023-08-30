@@ -30,7 +30,8 @@ function changeBackgroundColor() {
 // *********************************************************************************** UPDATE TIMER FUNCTION
 
 function updateTimer() {
-  timerValue = Math.max(0, timerValue - 1);
+  /*timerValue = Math.max(0, timerValue - 1);*/
+  timerValue = timerValue - 1;
   timer.textContent = timerValue.toFixed(2) + "s";
 
   if (timerValue <= 0.00) {
