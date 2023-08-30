@@ -33,7 +33,9 @@ function updateTimer() {
   /*timerValue = Math.max(0, timerValue - 1);*/
   timerValue = timerValue - 1;
   /*timer.textContent = timerValue.toFixed(2) + "s";*/
-
+  if (timerValue = 1.00) {
+    background.className = "black";
+  }
   if (timerValue <= 0.00) {
     changeBackgroundColor();
     timerValue = 5.0;
