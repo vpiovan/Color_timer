@@ -30,10 +30,10 @@ function changeBackgroundColor() {
 // *********************************************************************************** UPDATE TIMER FUNCTION
 
 function updateTimer() {
-  timerValue = Math.max(0, timerValue - 0.01);
+  timerValue = Math.max(0, timerValue - 1);
   timer.textContent = timerValue.toFixed(2) + "s";
 
-  if (timerValue <= 0.01) {
+  if (timerValue <= 0.00) {
     changeBackgroundColor();
     timerValue = 5.0;
   }
@@ -47,7 +47,7 @@ function togglePause() {
     timerInterval = null;
   /*pauseButton.textContent = "Play";*/
   } else {
-    timerInterval = setInterval(updateTimer, 10);
+    timerInterval = setInterval(updateTimer, 1000);
 /*    pauseButton.textContent = "Pause";*/
   }
 }
