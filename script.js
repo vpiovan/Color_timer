@@ -9,7 +9,7 @@ const timer = document.getElementById("timer");
 let currentIndex = 0;
 let previousIndex = -1;
 let timerInterval;
-let timerValue = 0;
+let timerValue = 5.0;
 
 // *********************************************************************************** RANDOM COLOR FUNCTION
 
