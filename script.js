@@ -18,9 +18,9 @@ function getRandomColorIndex() {
  /* do {*/
     newIndex = Math.floor(Math.random() * colors.length);
  /* } while (newIndex === previousIndex);
-  previousIndex = newIndex;
+  previousIndex = newIndex;*/
   return newIndex;
-}*/
+}
 
 function changeBackgroundColor() {
   currentIndex = getRandomColorIndex();
