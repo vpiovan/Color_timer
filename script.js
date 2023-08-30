@@ -2,8 +2,8 @@
 
 const colors = ["blue", "yellow", "red", "white"];
 const background = document.getElementById("background");
-/*const pauseButton = document.getElementById("pauseButton");
-const resetButton = document.getElementById("resetButton");*/
+/*const pauseButton = document.getElementById("pauseButton");*/
+/*const resetButton = document.getElementById("resetButton");*/
 const timer = document.getElementById("timer");
 
 let currentIndex = 0;
@@ -66,8 +66,8 @@ function resetTimer() {
 // ****************************************************************************************** EVENT LISTENER
 
 background.addEventListener("click", changeBackgroundColor);
-/*pauseButton.addEventListener("click", togglePause);
-resetButton.addEventListener("click", resetTimer);*/
+/*pauseButton.addEventListener("click", togglePause);*/
+/*resetButton.addEventListener("click", resetTimer);*/
 
 changeBackgroundColor();
 togglePause();
