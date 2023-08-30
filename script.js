@@ -15,12 +15,12 @@ let timerValue = 5.0;
 
 function getRandomColorIndex() {
   let newIndex;
-  do {
+ /* do {*/
     newIndex = Math.floor(Math.random() * colors.length);
-  } while (newIndex === previousIndex);
+ /* } while (newIndex === previousIndex);
   previousIndex = newIndex;
   return newIndex;
-}
+}*/
 
 function changeBackgroundColor() {
   currentIndex = getRandomColorIndex();
